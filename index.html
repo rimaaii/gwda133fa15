@@ -2,12 +2,17 @@
 <head>
   <title>MIU WEB | Home</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
   <style>
     body{
       text-align: center;
       font-family: "Lucida Sans Unicode", sans-serif;
       background-image: url(https://static.pexels.com/photos/689/sea-black-and-white-flight-sky.jpg);
       background-size: cover;
+    }
+
+    header{
+      padding: 110px;
     }
     
     a {
@@ -21,16 +26,69 @@
     a:visited{
       color: hotpink;
     }
-    
-    
-    
-    
+
+    h1{
+      font-family: 'Candal', sans-serif;
+    }
+ 
+    #what-i-do{
+      background-color: #FFF;
+      /*clearing floats*/
+      overflow: hidden;
+    }
+
+    article{
+      padding: 10px;
+      width: 270px;
+      float: left;
+      background-color: #EDEDED;
+      margin: 5px;
+      height: 150px;
+      border-radius: 3px;
+    }
+
+    #who-i-am{
+    color: white;
+    background-color: #363636;
+    padding: 20px;
+    }
+
+    .container{
+      width: 900px;
+      /*centering*/
+      margin: 0 auto;
+    }
   </style>
 </head>
 <body>
+<header> 
   <img src="http://i.imgur.com/FVDGmPA.png" alt="MIU Web Logo" width="200">
   <h1>- Creative Web Designs delivered on time and budget -</h1>
 <p>We are a Miami based Web Design Studio located right in the heart of downtown.</p>
+</header>
+<section id="what-i-do">
+<div class="container">
+<h1>What I do</h1>
+
+<article>
+<i class="fa fa-laptop fa-2x"></i>
+  <h1>Web Design</h1><p>From Design to Development, I can assist with all aspects of Web Site Creation.</p></article>
+<article>
+<i class="fa fa-mobile fa-2x"></i>
+  <h1>App Development</h1><p>I have 3 published apps in the markets.</p></article>
+<article>
+<i class="fa fa-cog fa-2x"></i>
+  <h1>SEO</h1><p>Are you being found? Let me help you get ranked in Google et al.</p></article>
+</div>
+</section>
+<section id="who-i-am">
+<div class="container">
+<h1>Who I am</h1>
+    <img src="http://gravatar.com/avatar/84b921aa2a51d74054cf78cc38c58973?s=512" width="150">
+  <p>
+    I work at the Ai Miami International University of Art & Design in the Graphic & Web Design Department. I am originally from a small town in Germany. I <i class="fa fa-heart"></i> everything Web Design.</p></article>
+</div>
+</section>
 <footer>
   <a href="#"><i class="fa fa-linkedin"></i></a>
   <a href="#"><i class="fa fa-twitter"></i></a>
