@@ -111,18 +111,36 @@ background-color: #FFF;
 padding: 20px;
 }
 
+#my-latest-work{
+background-color: #FFF;
+padding: 20px;
+}
+
+#my-latest-work img{
+	height: 300px;
+}
+
 #my-resume iframe{
 	width: 800px;
 	height: 400px;
 }
 
   </style>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
+
+
 </head>
+
 <body>
 <header> 
   <img src="http://i.imgur.com/FVDGmPA.png" alt="MIU Web Logo" width="200">
   <h1>- Creative Web Designs delivered on time and budget -</h1>
 <p>We are a Miami based Web Design Studio located right in the heart of downtown.</p>
+
+
 
 <!-- SnapWidget -->
 <iframe src="http://snapwidget.com/in/?u=bWl1d2VifGlufDI1MHwzfDJ8fG5vfDV8bm9uZXxvblN0YXJ0fHllc3xubw==&ve=241115" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:765px; height:510px"></iframe>
@@ -164,9 +182,12 @@ padding: 20px;
 </section>
 <section id="my-latest-work">
 <h1>My latest work</h1>
-<img src="http://miuweb.me/miamiartweek/images/overview/screen3.jpg" alt="Web Design Client Project">
-<img src="http://miuweb.me/miamiartweek/images/overview/screen2.jpg" alt="Web App Development Miami">
-<img src="http://miuweb.me/miamiartweek/images/overview/screen4.jpg" alt="Mobile Website Developer">
+<a class="test-popup-link" href="http://miuweb.me/miamiartweek/images/overview/screen3.jpg">
+<img src="http://miuweb.me/miamiartweek/images/overview/screen3.jpg" alt="Web Design Client Project"></a>
+<a class="test-popup-link" href="http://miuweb.me/miamiartweek/images/overview/screen2.jpg">
+<img src="http://miuweb.me/miamiartweek/images/overview/screen2.jpg" alt="Web App Development Miami"></a>
+<a class="test-popup-link" href="http://miuweb.me/miamiartweek/images/overview/screen4.jpg">
+<img src="http://miuweb.me/miamiartweek/images/overview/screen4.jpg" alt="Mobile Website Developer"></a>
 </section>
 <section id="my-resume">
 <h1>My Resume</h1>
@@ -177,4 +198,13 @@ padding: 20px;
   <a href="#"><i class="fa fa-twitter"></i></a>
   <a href="#"><i class="fa fa-instagram"></i></a>
 </footer>
+
+<script>
+$('.test-popup-link').magnificPopup({
+  type: 'image',
+  gallery: {enabled:true}
+  // other options
+});
+</script>
+
 </body>
